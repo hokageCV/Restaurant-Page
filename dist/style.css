@@ -32,6 +32,11 @@ body{
     background-color: #fbd19c;
 }
 /* ============================================== */
+#content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
  /* ===================  navbar   ===================== */
 .navbar{
@@ -144,11 +149,8 @@ body{
     text-align: center;
     vertical-align: middle;
     color: darkred;
-    /* stick footer at bottom */
-    position: absolute;
-    /* left: 0; */
-    /* bottom: 0; */
     height: 30px;
-    width: 100%;
-    overflow: hidden;
+
+    /* stick footer at bottom */
+    margin-top: auto;
  }
