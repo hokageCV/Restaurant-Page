@@ -1,17 +1,40 @@
-import './style.css'
+import { navBarPrakatHoo } from "./navbar.js";
+import { summonHomePage } from "./home.js";
+import { summonMenuPage } from "./menu.js";
+import { summonContactPage } from "./contact.js";
+import { footerPrakatHoo } from "./footer.js";
 
-document.body.classList.add('backg');
+const contentDiv = document.getElementById('content');
 
-const contentDiv = document.createElement('div');
-contentDiv.setAttribute('id', 'content');
 
-const heading = document.createElement('h1');
-const textNode = document.createTextNode("work kare che bhai");
-heading.classList.add('jiraiya');
+function homePageBanao(){
+    contentDiv.replaceChildren();
+    navBarPrakatHoo();
+    summonHomePage();
+    footerPrakatHoo();
+}
+function menuPageBanao(){
+    contentDiv.replaceChildren();
+    navBarPrakatHoo();
+    summonMenuPage();
+    footerPrakatHoo();
+}
+function contactPageBanao(){
+    contentDiv.replaceChildren();
+    navBarPrakatHoo();
+    summonContactPage();
+    footerPrakatHoo();    
+}
 
-heading.appendChild(textNode);
-contentDiv.appendChild(heading);
+homePageBanao();
 
-document.body.appendChild(contentDiv);
-console.log( "work kar raha hai, hey hey hey" );
-console.log( contentDiv.getAttribute('id') );
+document.addEventListener("click", (e) => {
+    const target = e.target.textContent;
+  
+    if (target === "HOME") homePageBanao();
+    if (target === "MENU") menuPageBanao();
+    if (target === "CONTACT") contactPageBanao();
+  });
+
+
+console.log( " નાશ્તો કરવા હાલો " );

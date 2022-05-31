@@ -1,0 +1,154 @@
+/* ============== CSS Reset ================ */
+:root{
+    /* --lightOrange: #f9c784; */
+    --lightOrange: #fde8cd;
+    --lightMaroon: #a25b5b;
+    --darkBrown: #433520;
+    --lightPink: #f98d84;
+    --navy: #525E75;
+    --purpleNavy: #4e598c;
+    --yellow: #f1d00a;
+    --thodaWhite: #f3eee5; 
+    --dirt: #9b7653;
+    --olive: #808000;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    /* background-color: var(--lightOrange) ; */
+
+    background: repeating-linear-gradient(transparent, transparent 7px, #fde8cd 7px, #fde8cd 10.5px, transparent 10.5px, transparent 14px, #fde8cd 10.5px, #fde8cd 28px, transparent 28px, transparent 31.5px, #fde8cd 31.5px, #fde8cd 35px, transparent 35px, transparent 56px), repeating-linear-gradient(90deg, transparent, transparent 7px, #fde8cd 7px, #fde8cd 10.5px, transparent 10.5px, transparent 14px, #fde8cd 10.5px, #fde8cd 28px, transparent 28px, transparent 31.5px, #fde8cd 31.5px, #fde8cd 35px, transparent 35px, transparent 56px), #fbd19c;
+    background-blend-mode: multiply;
+    background-color: #fbd19c;
+}
+/* ============================================== */
+
+ /* ===================  navbar   ===================== */
+.navbar{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    
+    /* background-color: var(--lightOrange) !important ; */
+
+    /* background: repeating-linear-gradient(transparent, transparent 7px, #fde8cd 7px, #fde8cd 10.5px, transparent 10.5px, transparent 14px, #fde8cd 10.5px, #fde8cd 28px, transparent 28px, transparent 31.5px, #fde8cd 31.5px, #fde8cd 35px, transparent 35px, transparent 56px), repeating-linear-gradient(90deg, transparent, transparent 7px, #fde8cd 7px, #fde8cd 10.5px, transparent 10.5px, transparent 14px, #fde8cd 10.5px, #fde8cd 28px, transparent 28px, transparent 31.5px, #fde8cd 31.5px, #fde8cd 35px, transparent 35px, transparent 56px), #fbd19c;  */
+    background-blend-mode: multiply;
+    background-color: #fbd19c;
+    /* to darken the background */
+    /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ); */
+    background: linear-gradient(rgba(200,167,124,0.5), rgba(200,167,124,0.5) );
+}
+.navbar h4{
+    font-size: 300%;
+    color: var(--olive)
+}
+.navBtn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navBtn-container a{
+    color: var(--lightMaroon);
+    border-radius: 20%;
+    margin: 10px 15px;
+    padding: 1px 5px;
+    cursor: pointer;
+
+    background-color: #FBAB7E;
+    -image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+ /* ===================  homepage ===================== */
+.homePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.homePage h2{
+    font-size: 350%;
+    color: var(--darkBrown);
+    margin-top: 5%;
+}
+.homePage p{
+    font-size: 150%;
+    padding-top: 20px;
+    color: var(--lightMaroon);
+}
+
+ /* ===================  menu     ===================== */
+ .menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 20px auto;
+ }
+ .menu-item{
+     border: 2px solid var(--dirt);
+     width: 100%;
+     margin: 10px 2px;
+ }
+ .menu-item h6{
+     color: var(--darkBrown);
+     font-size: 200%;
+     text-align: center;
+ }
+ .menu-item p{
+     text-align: center;
+     font-size: 120%;
+     margin: 20px 10px;
+ }
+ .menu-item .price{
+     color: var(--lightMaroon);
+ }
+
+
+ /* ===================  contacts ===================== */
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-page h4{
+    font-size: 350%;
+    color: var(--darkBrown);
+    margin-top: 5%;
+}
+.contact-page p{
+    font-size: 150%;
+    padding-top: 20px;
+    color: var(--lightMaroon);
+}
+
+ /* ===================  footer   ===================== */
+ footer{
+    background-color: var(--lightPink);
+    text-align: center;
+    vertical-align: middle;
+    color: darkred;
+    /* stick footer at bottom */
+    position: absolute;
+    /* left: 0; */
+    /* bottom: 0; */
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+ }
