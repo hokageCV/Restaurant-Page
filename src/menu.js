@@ -31,7 +31,7 @@ const menu = [
     },
 ];
 
-// //first try
+
 function summonMenuPage(){
     let menuContainer = document.createElement('div');
     menuContainer.classList.add("menu-container");
