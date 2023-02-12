@@ -1,4 +1,4 @@
-# ![Restaurant Page](https://restaurant-page-hokagecv.netlify.app)
+# [Restaurant Page](https://restaurant-page-hokagecv.netlify.app)
 A delicious and interactive website, showcasing the best of Indian cuisine.
 
 ### Technology Stack
